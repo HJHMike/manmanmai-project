@@ -1,0 +1,193 @@
+@import './baseHJH.less';
+
+
+* { touch-action: pan-y; } 
+
+
+#header{
+    height: 0.49rem;
+    .left{
+        position: absolute;
+        font-size: 0.16rem;
+        color: #fff;
+        top: 0.15rem;
+    }
+    .title{
+        text-align: center;
+        h1{
+            color: #fff;
+            padding-top: 0.03rem;
+            font-size: 0.16rem;
+        }
+    }
+}   
+
+body{
+    height: 100vh;
+    // display: flex;
+    padding-bottom: 0.8rem;
+}
+
+#main{
+    height: 100%;
+    position: relative;
+    .nav{
+        background-color: #fff;
+        height: 0.4rem;
+        line-height: 0.38rem;
+        font-size: 0.3rem;
+        position: relative;
+        a{
+            text-align: center;
+            float: left;
+            width: 1rem;
+            font-size: 0.14rem;
+            color: #000;
+        }
+        .mui-scroll{
+            width: 350%;
+            .mui-active{
+                color: red;
+                border-bottom: 2px solid red;
+            }
+        }
+    }
+    // .search{
+    //     width: 100%;
+    //     height: 0.3rem;
+    //     display: flex;
+    //     position: fixed;
+    //     top: 0.9rem;
+    //     .search-icon{
+    //         font-size: 0.2rem;
+    //         color: #666;
+    //         margin-top: 0.05rem;
+    //         margin-right: 0.07rem;
+    //     }
+    //     .search-bar{
+    //         flex: 1;
+    //         padding: 0.1rem;
+    //     }
+    //     .close{
+    //         position: absolute;
+    //         right: 0.15rem;
+    //         top: 0.15rem;
+    //         font-size: 0.2rem;
+    //         color: #666;
+    //     }
+    // }
+    .product{
+        height: 100%;
+        background-color: #f7f7f7;
+        padding: 0.1rem;
+        .product-detail{
+            background-color: #fff;
+            width: 100%;
+            height: 1.5rem;
+            position: relative;
+            margin-bottom: 0.1rem;
+            .detail-img{
+                width: 1.4rem;
+                height: 1.4rem;
+                margin-top: 0.05rem;
+                margin-left: 0.05rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .detail-top{
+                width: 2.05rem;
+                height: 50%;
+                position: absolute;
+                top: 0.05rem;
+                right: 0;
+                .title{
+                    
+                }
+                .price{
+                    position: absolute;
+                    top: 0.45rem;
+                    left: 0;
+                    font-size: 0.16rem;
+                    color: #fc3571;
+                    i{
+                        font-style: normal;
+                    }
+                    del{
+                        font-size: 0.14rem;
+                        margin-left: 0.1rem;
+                        color: #a8a8a8;
+                    }
+                }
+                
+            }
+            .detail-bottom{
+                width: 2.05rem;
+                height: 50%;
+                position: absolute;
+                bottom: 0.05rem;
+                right: 0rem;
+                .bar{
+                    position: absolute;
+                    top: 0.1rem;
+                    i{
+                        display: inline-block;
+                        width: 0.8rem;
+                        height: 0.15rem;
+                        border: 1px solid #e4393c;
+                        border-radius: 0.15rem;
+                        text-align: center;
+                        line-height: 0.15rem;
+                        em{
+                            background-color: #ffb7b7;
+                            border-top-left-radius: 0.07rem;
+                            border-bottom-left-radius: 0.07rem;
+                            height: 0.13rem;
+                            float: left;
+                        }
+                        span{
+                            position: absolute;
+                            left: 0.3rem;
+                            color: #ff5e5d;
+                        }
+                    }
+                    b{
+                        margin-left: 0.1rem;
+                    }
+                    
+                    
+                }
+                .coupon{
+                    position: absolute;
+                    bottom: 0.1rem;
+                    font-size: 0.12rem;
+                    width: 1.2rem;
+                    height: 0.25rem;
+                    line-height: 0.25rem;
+                    text-align: center;
+                    border: 1px dashed #e4393c;
+                    a{
+                        color: #e4393c;
+                    }
+                }
+                .link{
+                    position: absolute;
+                    right: 0.1rem;
+                    bottom: 0.1rem;
+                    width: 0.6rem;
+                    height: 0.25rem;
+                    background-color: #ff5e5d;
+                    color: #fff;
+                    line-height: 0.25rem;
+                    text-align: center;
+                    border-radius: 0.05rem;
+                    font-size: 0.12rem;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,93 @@
+
+img,input{
+    vertical-align: middle;
+    border: none;
+}
+body{
+    font-size: .14rem;
+    position: relative;
+    padding-top: .49rem;
+    background: #fff;
+}
+li{
+    list-style: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+// 头部区域
+#header{
+    width: 100vw;
+    height: .49rem;
+    background-color: #ff4e49;
+    padding: .1rem;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    .logo{
+        min-height: .25rem;
+        overflow: hidden;
+        img{
+            width: 1.85rem;
+            height: .25rem;
+           
+        }
+    }
+    .app-download{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding-top: .1rem;
+        padding-right: .05rem;
+     img{
+        width: 35px;
+        height: 35px;
+     }
+    }
+}
+
+
+#footer {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+	width: 100%;
+	height: 1rem;
+    z-index: 999;
+    background-color: #333;
+	.footer-top {
+		border-top: .01rem solid #c4c4c4;
+		border-bottom: .01rem solid #c4c4c4;
+		height: 0.34rem;
+		line-height: 0.34rem;
+		display: flex;
+		a {
+                color: #fff;
+			display: block;
+			width: 30%;
+			height: 100%;
+			font-size: .14rem;
+			text-align: center;
+			border-left: .01rem solid #c4c4c4;
+			img {
+				display: inline-block;
+				width: 0.14rem;
+				margin-top: -0.02rem;
+			}
+		}
+	}
+	.footer {	
+		text-align: center;
+		font-size: .12rem;
+        padding: .15rem 0 ;
+        a{
+            color: #bebebe;
+        }
+        a:nth-of-type(1){
+            color: #ff4e49;
+        }
+	}
+}

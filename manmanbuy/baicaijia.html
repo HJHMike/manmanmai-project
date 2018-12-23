@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>白菜价</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/baicaijia.less">
+    <script src="./lib/less/less.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <header id="header">
+
+        <a href="index.html" class="fa fa-arrow-left left"></a>
+        <div class="title">
+            <h1>白菜价-淘宝内部券</h1>
+        </div>
+        <div class="app-download">
+            <a href="#">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <main id="main">
+        <div class="mui-scroll-wrapper" id="refreshContainer">
+            <div class="mui-scroll">
+                <div class="box">
+                    <section class="nav">
+                        <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                            <div class="mui-scroll nav-title">
+                            
+                            </div>
+                        </div>
+                    </section>
+                        <!-- <section class="search">
+                                <a href="#" class="fa fa-search search-icon"></a>
+                                <input type="text" name="" id="" class="search-bar" placeholder="请输入要搜索的商品">
+                                <a href="#" class="fa fa-close close"></a>
+                            </section> -->
+
+                    <section class="product">
+                            
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 底部部分 -->
+    <footer id="footer">
+            <div class="footer-top">
+                <a href="login.html">登录</a>
+                <a href="#">注册</a>
+                <a href="#" class="top">
+                    <img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部
+                </a>
+            </div>
+            <div class="footer">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    -- 掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+
+    <script id="titleTpl" type="text/html">
+        {{each result value index}}
+        <a class="mui-control-item {{index == 0 ? 'mui-active' : ''}}" data-id='{{value.titleId}}'>
+            {{value.title}}
+        </a>
+        {{/each}}
+    </script>
+
+    <script id="productTpl" type="text/html">
+        {{each result value}}
+        <div class="product-detail">
+            <div class="detail-img">
+                {{@value.productImg}}
+            </div>
+
+            <div class="detail-top">
+                {{@value.productName}}
+                <span class="price">{{@value.productPrice}}</span>
+            </div>
+            <div class="detail-bottom">
+                <!-- <span class="percent">1%</span> -->
+                {{@value.productCouponRemain}}
+                <span class='coupon'>{{@value.productCoupon}}</span>
+                <span class="link">{{@value.productHref}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./js/baicaijia.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+</body>
+
+</html>
